@@ -1,0 +1,21 @@
+CREATE TABLE dani_finds (id INTEGER PRIMARY KEY, type TEXT, item TEXT, quantity INTEGER, price NUMERIC);
+
+INSERT INTO dani_finds VALUES (1, 'top', 'tshirt', 2, '$5');
+INSERT INTO dani_finds VALUES (2, 'top', 'blouse', 4, '$10');
+INSERT INTO dani_finds VALUES (3, 'top', 'tank_top', 1, '$1');
+INSERT INTO dani_finds VALUES (4, 'top', 'long_sleeve', 1, '$15');
+INSERT INTO dani_finds VALUES (5, 'bottom', 'shorts', 6, '$3');
+INSERT INTO dani_finds VALUES (6, 'bottom', 'pants', 8, '$6');
+INSERT INTO dani_finds VALUES (7, 'bottom', 'jeans', 1, '$5');
+INSERT INTO dani_finds VALUES (8, 'bottom', 'skirt', 4, '$2');
+INSERT INTO dani_finds VALUES (9, 'bottom', 'midi_skirt', 1, '$8');
+INSERT INTO dani_finds VALUES (10, 'dress', 'maxi', 1, '$15');
+INSERT INTO dani_finds VALUES (11, 'dress', 'skater', 5, '$10');
+INSERT INTO dani_finds VALUES (12, 'outer_wear', 'cardigan', 6, '$3');
+INSERT INTO dani_finds VALUES (13, 'outer_wear', 'rain_jacket', 3, '$8');
+INSERT INTO dani_finds VALUES (14, 'outer_wear', 'snow_jacket', 6, '$11');
+INSERT INTO dani_finds VALUES (15, 'outer_wear', 'peacoat', 2, '$7');
+
+
+SELECT id, type, item, price FROM dani_finds 
+ORDER BY price;
